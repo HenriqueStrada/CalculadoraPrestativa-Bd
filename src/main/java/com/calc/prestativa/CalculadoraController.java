@@ -14,7 +14,7 @@ public class CalculadoraController {
         if (registroService.registrarNovoUsuario(novoUsuario)) {
             return ResponseEntity.ok("Registro bem-sucedido.");
         } else {
-            return ResponseEntity.badRequest().body("Nome de usuário já está em uso");
+            return ResponseEntity.badRequest().body("Nome de usuário já está em uso.");
         }
     }
 
