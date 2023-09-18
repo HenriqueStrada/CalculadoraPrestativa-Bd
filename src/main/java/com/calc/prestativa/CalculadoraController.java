@@ -9,7 +9,7 @@ public class CalculadoraController {
     @Autowired
     private RegistroService registroService;
 
-    @PostMapping("/registro")
+    @PostMapping("/registrar")
     public ResponseEntity<String> registrar(@RequestBody Usuario novoUsuario) {
         if (registroService.registrarNovoUsuario(novoUsuario)) {
             return ResponseEntity.ok("Registro bem-sucedido.");
