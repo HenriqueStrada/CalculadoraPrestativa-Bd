@@ -12,7 +12,7 @@ public class CalculadoraController {
     @PostMapping("/registro")
     public ResponseEntity<String> registrar(@RequestBody Usuario novoUsuario) {
         if (registroService.registrarNovoUsuario(novoUsuario)) {
-            return ResponseEntity.ok("Registro bem-sucedido");
+            return ResponseEntity.ok("Registro bem-sucedido.");
         } else {
             return ResponseEntity.badRequest().body("Nome de usuário já está em uso");
         }
