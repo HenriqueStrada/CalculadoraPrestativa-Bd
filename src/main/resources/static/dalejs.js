@@ -15,7 +15,7 @@ window.onload = function() {
                 if (response.status === 200) {
                     // Redirecionar para a página de perfil ou outra página após o login bem-sucedido
                 } else {
-                    // Exibir mensagem de erro
+                    // Exibir mensagem de erro.
                 }
             })
             .catch(error => {
